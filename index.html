@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Macro Research Reports — Cambridge CCAF & More</title>
+<style>
+:root {
+  --bg-deep: #042f2e;
+  --bg-primary: #134e4a;
+  --bg-card: #1a5c56;
+  --text-primary: #f0fdfa;
+  --text-secondary: #99f6e4;
+  --accent: #2dd4bf;
+  --border: rgba(45,212,191,0.2);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", sans-serif; background: var(--bg-deep); color: var(--text-primary); }
+.container { max-width: 800px; margin: 0 auto; padding: 50px 30px; }
+header { text-align: center; margin-bottom: 50px; }
+header h1 { font-size: 30px; font-weight: 800; color: var(--accent); margin-bottom: 10px; }
+header p { color: var(--text-secondary); font-size: 15px; }
+.card-list { display: flex; flex-direction: column; gap: 16px; }
+.card {
+  display: flex; align-items: center; gap: 18px;
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 12px; padding: 22px 25px; text-decoration: none;
+  color: inherit; transition: all 0.2s;
+}
+.card:hover { background: var(--bg-card-hover); transform: translateX(4px); }
+.card-icon {
+  width: 48px; height: 48px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; font-weight: 800; color: var(--bg-deep); flex-shrink: 0;
+}
+.card-info h3 { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+.card-info .meta { font-size: 13px; color: var(--text-secondary); }
+.card-arrow { margin-left: auto; font-size: 20px; color: var(--accent); }
+footer { text-align: center; margin-top: 60px; font-size: 13px; color: var(--text-secondary); }
+@media (max-width: 600px) { .container { padding: 30px 15px; } header h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Mongo Research Reports</h1>
+    <p>宏观研究 / 行业深度分析报告</p>
+  </header>
+  <div class="card-list">
+    <a class="card" href="reports/cambridge-ai-financial-services-2026/report.html">
+      <div class="card-icon" style="background:#2dd4bf;">CC</div>
+      <div class="card-info">
+        <h3>Cambridge CCAF — 2026 AI in Financial Services Report</h3>
+        <span class="meta">Cambridge Judge Business School | 2026-04-28 | 五大维度分析 + Chart.js 可视化</span>
+      </div>
+      <span class="card-arrow">→</span>
+    </a>
+  </div>
+  <footer>Macro Research Reports · Updated 2026-07-29</footer>
+</div>
+</body>
+</html>
